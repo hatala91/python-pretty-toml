@@ -13,7 +13,7 @@ def main(file: str, out: Optional[str] = None) -> None:
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Process some integers.")
+    parser = argparse.ArgumentParser(description="A formatter for TOML files.")
     parser.add_argument(
         "-f",
         "--file",
