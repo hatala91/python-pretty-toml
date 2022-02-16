@@ -15,11 +15,13 @@ pip install --upgrade prettytoml
 
 ## Usage ##
 
-```python
->>> import prettytoml
->>> prettified_content = prettytoml.prettify_from_file('sample.toml')
->>> with open('sample-prettified.toml', 'w') as fp:
-      fp.write(prettified_content)
+```
+toml_prettify.py [-h] -f FILE [-o OUT]
+
+options:
+  -h, --help            show this help message and exit
+  -f FILE, --file FILE  path to the file to be formatted
+  -o OUT, --out OUT     output file, if not specified the original is overwritten
 ```
 
 ## Formatting Rules ##
