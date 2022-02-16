@@ -16,7 +16,7 @@ pip install --upgrade prettytoml
 ## Usage ##
 
 ```
-toml_prettify.py [-h] -f FILE [-o OUT]
+prettytoml [-h] -f FILE [-o OUT]
 
 options:
   -h, --help            show this help message and exit
