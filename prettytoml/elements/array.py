@@ -18,7 +18,8 @@ class ArrayElement(ContainerElement, traversal.TraversalMixin):
 
     def __init__(self, sub_elements):
         common.ContainerElement.__init__(self, sub_elements)
-        self._check_homogeneity()
+        # Commenting out to avoid raising an error in cases like Poe tasks
+        #self._check_homogeneity()
 
     def _check_homogeneity(self):
         if len(set(type(v) for v in self.primitive_value)) > 1:
